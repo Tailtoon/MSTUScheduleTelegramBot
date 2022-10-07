@@ -41,6 +41,9 @@ public class ScheduleBot extends TelegramLongPollingCommandBot {
         Message msg = update.getMessage();
         Long chatId = msg.getChatId();
         String userName = getUserName(msg);
+
+        String answer = "NonCommand " + userName;
+        setAnswer(chatId, userName, answer);
     }
 
     /*public static Settings getUserSettings(Long chatId) {
