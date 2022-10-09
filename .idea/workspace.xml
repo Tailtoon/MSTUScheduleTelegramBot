@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b59fcc0-8899-429a-b0c3-5c843ec48007" name="Changes" comment="Test">
+    <list default="true" id="0b59fcc0-8899-429a-b0c3-5c843ec48007" name="Changes" comment="Add main files, test iteration">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Day.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DoublePeriod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Schedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ScheduleBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ScheduleBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +122,11 @@
           <url>jar://$MAVEN_REPOSITORY$/net/sourceforge/htmlunit/htmlunit/2.64.0/htmlunit-2.64.0.jar!/com/gargoylesoftware/htmlunit/html/HtmlSelect.class</url>
           <line>104</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Test.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
