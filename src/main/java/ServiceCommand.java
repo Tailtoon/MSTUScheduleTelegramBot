@@ -1,5 +1,6 @@
 import org.telegram.telegrambots.extensions.bots.commandbot.commands.BotCommand;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
+import org.telegram.telegrambots.meta.api.objects.replykeyboard.ReplyKeyboard;
 import org.telegram.telegrambots.meta.bots.AbsSender;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
@@ -15,6 +16,20 @@ abstract class ServiceCommand extends BotCommand {
         message.enableMarkdown(true);
         message.setChatId(chatId.toString());
         message.setText(text);
+        try {
+            absSender.execute(message);
+        } catch (TelegramApiException e) {
+            // TODO: make a log class to print and save info about all actions and errors
+        }
+    }
+
+    void sendAnswer(AbsSender absSender, Long chatId, String commandName, String userName, String text,
+                    ReplyKeyboard keyboard) {
+        SendMessage message = new SendMessage();
+        message.enableMarkdown(true);
+        message.setChatId(chatId.toString());
+        message.setText(text);
+        message.setReplyMarkup(keyboard);
         try {
             absSender.execute(message);
         } catch (TelegramApiException e) {

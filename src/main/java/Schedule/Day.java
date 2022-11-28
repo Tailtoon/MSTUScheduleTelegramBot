@@ -1,3 +1,5 @@
+package Schedule;
+
 import java.util.List;
 
 public class Day {

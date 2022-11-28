@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+package Schedule;
 
 public class DoublePeriod {
     private int num;
